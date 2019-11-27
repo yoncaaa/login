@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <!--<link rel="stylesheet" href="loginheader.css">-->
     <link rel="stylesheet" href="homestyle.css">
+    <?php include("regmail3.php");?>
 
 </head>
 <body>
@@ -22,11 +23,15 @@
 </header>
     <div class="login-page">
         <div class="form">
-            <form class="register-form" id="register-form">
-                <input type="text" placeholder="username"/>
-                <input type="text" placeholder="password"/>
-                <input type="text" placeholder="e-mail"/>
-                <button >Create</button>
+            <form class="register-form" id="register-form" action="regmail3.php" method="POST">
+                <input type="text" placeholder="nachname" name="nachname"/>
+                <input type="text" placeholder="vorname" name="vorname"/>
+                <input type="password" placeholder="password" name="passwort"/>
+                <input type="password" placeholder="password2" name="passwort2"/>
+                <input type="email" placeholder="e-mail" name="email"/>
+                <input type="text" placeholder="beruf" name="beruf"/>
+                <button  >Create</button>
+                <input type="submit" value="submit">
                 <p class="message">Already registered? <a href="#" class="no" onclick="swfromreg()">Login</a></p>
             </form>
             <form class="login-form" id="login-form" >
