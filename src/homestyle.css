@@ -4,7 +4,10 @@
     box-sizing: border-box;
     margin: 0;
     padding:0;
-    background-color: #24252A;
+/*    background-color: #24252A; */
+}
+body{
+    background-color: #d3e6f585;
 }
 li, a.yes, button.header-button {
     font-family: "Montserrat", sans-serif;
@@ -30,6 +33,11 @@ header{
     justify-content: space-between;
     align-content: center;
     padding: 30px 10px;
+    background-color: #45416abd;
+    min-width: max-content; /*damit der header bei mobiler Ansicht nicht zerquetscht wird*/
+
+}
+
 
 }
 .logo{
@@ -92,4 +100,107 @@ button:hover{
 }
 .elementimg{
     margin: 0 0 20px;
+}
+.tabContainer{
+
+    position: relative;
+    z-index: 1;
+    max-width: 1000px;
+    margin: 10px auto 20%;
+    padding: 0 45px;
+    text-align: left;
+    min-width: min-content;
+}
+.kursTabContainer{
+    position: relative;
+    z-index: 1;
+    max-width: 1000px;
+    margin: 10px auto 20% 80px;
+    padding: 0;
+    text-align: left;
+    min-width: min-content;
+    display: flex; /* buttons sind links bei diesem tab, items sind also horizontal*/
+}
+.kursButtonContainer{
+    padding: 10px 0;
+}
+.content{
+    border-style: solid;
+    border-color: #2f3640;
+    text-align: left;
+/*  padding: 0 900px 400px 0;*/
+    background: white;
+    min-width: 800px;
+
+
+}
+#allekurse {
+    display: block;
+}
+#freizeit {
+    display: none;
+}
+#neuerContent{
+    display: block;
+}
+#aktuellerContent{
+    display: none;
+}
+.contentButton{
+    font-family: "Roboto",sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #918db8;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    cursor: pointer;
+}
+.kursContentButton{
+    font-family: "Roboto",sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #918db8;
+    border: 0;
+    padding: 10px 25px;
+    margin: 1px 0;
+    float: right;
+    color: #FFFFFF;
+    font-size: 14px;
+    cursor: pointer;
+    min-width: max-content;
+    width: 140px;
+}
+
+
+
+div.kurscontent{
+    padding: 0;
+    margin: 15px 30px;
+    border-style: solid;
+    border-color: #5261ad;
+    border-width: medium;
+    background: white;
+    min-width: max-content;
+}
+
+h3.kurstitle{
+    padding: 10px;
+    font-family: Times, serif;
+    margin:0;
+    background-color: rgba(148, 148, 182, 0.38);
+}
+a.kurstitle{
+    text-decoration:none;
+    font-size: large;
+    font-weight: bold;
+    color: #5261ad;
+}
+.kursbeschreibung{
+    margin: 10px;
+}
+.uberschrift{
+    margin: 20px auto 20px 280px;
+    font-family: sans-serif;
 }
