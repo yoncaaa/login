@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <!--https://www.youtube.com/watch?v=PwWHL3RyQgk-->
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE-edge">
+    <title>Home</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="homestyle.css">
+    <script src="login.js"></script>
+
+</head>
+<body>
+<header>
+    <a href="home2.html"><img class="logo" src="logo.jpg" alt="logo"></a>
+    <nav>
+        <ul class="nav_links">
+            <li><a class="yes" href="home2.html">Start</a> </li>
+            <li><a class="yes" href="kursuebersicht.html">Kurs&uuml;bersicht</a> </li>
+            <li><a class="yes" href="#">Suche</a> </li>
+        </ul>
+    </nav>
+
+    <div id="logregbuttons">
+        <a class="cta"  href="loginpage.html"><button class="header-button">Login</button></a>
+        <a class="cta"  href="loginpage.html"><button class="header-button">Registrieren</button></a>
+    </div>
+</header>
+
+<h1 class="uberschrift">Kurs&uuml;bersicht</h1>
+
+<div class="kursTabContainer">
+    <div class="kursButtonContainer">
+        <button class="kursContentButton" onclick="selectedTabKursu(this.id)" >Alle Kurse</button>
+        <button class="kursContentButton" onclick="selectedTabKursu('freizeit')">Freizeit</button>
+        <button class="kursContentButton" onclick="selectedTabKursu('kultur')">Kultur</button>
+        <button class="kursContentButton" onclick="selectedTabKursu('beruf')">Beruf</button>
+        <button class="kursContentButton" onclick="selectedTabKursu('sprachen')">Sprachen</button>
+        <button class="kursContentButton" onclick="selectedTabKursu('sport')">Sport</button>
+        <button class="kursContentButton" onclick="selectedTabKursu('edv')">EDV</button>
+
+    </div>
+
+    <div class="content" id="allekurse">
+        <div class="kurscontent">
+            <h3 class="kurstitle">
+                <a href="#" class="kurstitle" >Die Passauer Stadtgeschichte</a>
+            </h3>
+            <!--<p class="kursbeschreibung">
+                    Erfahren Sie anschaulich die Passauer Geschichte:
+                    Von den naturräumlichen Voraussetzungen über die Kelten- und Römerzeit
+                    geht es durch das Mittelalter und die fürstbischöfliche Zeit mit Salzhandel und Judenpogrom.
+                    Die Neuzeit beginnt mit dem ersten evangelischen Märtyrer und den "Passauer Vertrag".
+                    Absolutismus und Barock prägen die nächsten Jahrhunderte. Säkularisation und Napoleon bilden<
+                    die doppelte Zäsur zum 19. Jahrhundert. Eisenbahnbau, Weltkriege, "Festspiele Europäische Wochen"
+                    und die Eröffnung der Universität sind Marken der letzten 200 Jahre. Aber auch Katastrophen wie Erdbeben,
+                    Hochwasser und Stadtbrände prägten die Stadtgeschichte.
+                </p>-->
+        </div>
+        <div class="kurscontent">
+            <h3 class="kurstitle">
+                <a href="#" class="kurstitle" >Schauspiel-Grundlagen für alle</a>
+            </h3>
+            <!--<p class="kursbeschreibung">
+                "Ein Schauspielhaus ist unsere Welt; für jeden ist eine Rolle bestellt." Wir alle schlüpfen täglich
+                in die unterschiedlichsten Rollen, aber haben Sie Lust, mal die Möglichkeiten einer ganz fremden Rolle
+                auszuprobieren? In diesem Kurs geht es um den Spaß und die Freiheit, die jeder kennenlernt,
+                der sich aufs Theaterspielen einlässt. Dabei braucht es keine Vorkenntnisse - ganz im Tempo der Teilnehmerinnen und
+                "Ein Schauspielhaus ist unsere Welt; für jeden ist eine Rolle bestellt." Wir alle schlüpfen täglich in die unterschiedlichsten Rollen, aber haben Sie Lust, mal die Möglichkeiten einer ganz fremden Rolle auszuprobieren? In diesem Kurs geht es um den Spaß und die Freiheit, die jeder kennenlernt, der sich aufs Theaterspielen einlässt. Dabei braucht es keine Vorkenntnisse - ganz im Tempo der Teilnehmerinnen und Teilnehmer und im geschützten Raum probieren wir Übungen und Spiele aus der Bühnenpraxis aus.
+                Schwerpunkte sind die Arbeit mit Körper und Stimme, szenisches Improvisieren und das Finden neuer Figuren.
+                Bitte bequeme Kleidung, warme Socken und eigene Verpflegung für den Tag mitbringen.
+
+            </p>-->
+        </div>
+        <div class="kurscontent">
+            <h3 class="kurstitle">
+                <a href="#" class="kurstitle" >Kurs 3</a>
+            </h3>
+            <!--<p class="kursbeschreibung">
+            </p>-->
+        </div>
+        <div class="kurscontent">
+            <h3 class="kurstitle">
+                <a href="#" class="kurstitle" >Kurs 4</a>
+            </h3>
+            <!--<p class="kursbeschreibung">
+            </p>-->
+        </div>
+        <div class="kurscontent">
+            <h3 class="kurstitle">
+                <a href="#" class="kurstitle" >Kurs 5</a>
+            </h3>
+            <!--<p class="kursbeschreibung">
+            </p>-->
+        </div>
+
+
+
+
+
+
+    </div>
+    <div class="content" id="freizeit">freizeit</div>
+</div>
+
+</body>
+</html>

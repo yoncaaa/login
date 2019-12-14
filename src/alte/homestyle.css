@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+/*    background-color: #24252A; */
+}
+body{
+    background-color: #FFFFFF;
+}
+li, a.yes, button.header-button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+.form-button{
+    font-family: "Roboto",sans-serif;
+    text-transform:uppercase;
+    outline: 0;
+    background: #af7e8a;
+    width: 100%;
+    border:0;
+    padding:15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    cursor: pointer;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 30px 10px;
+    background-color: thistle;
+}
+.logo{
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.nav_links{
+    list-style: none;
+}
+
+.nav_links li{
+    display: inline-block;
+    padding:9px 25px;
+}
+.nav_links li a{
+    transition: all 0.3s ease 0s;
+}
+.nav_links li a:hover{
+    color: #0088a9;
+}
+
+button.header-button{
+    padding:9px 25px;
+    background-color: rgba(0,136,169,1);
+    border:none;
+    border-radius: 50px;
+    cursor:pointer;
+    transition: all 0.3s ease 0s;
+    margin-left: 20px;
+
+}
+
+
+button:hover{
+    background-color: rgba(0,136,169,0.8);
+}
+
+.column{
+    align-content: stretch;
+    box-sizing: border-box;
+    margin: 40px auto;
+    padding: 0;
+    background-color: #24252A;
+    /* align-items: baseline; */
+    /* column-gap: normal; */
+    display: inline-grid;
+    justify-content: space-between;
+    align-content: center;
+    padding: 30px 10px;
+/* grid-auto-columns: auto;*/
+    margin: 0 80px;
+}
+.thecolumns{
+    justify-items: flex-end;
+}
+
+.element {
+    margin: 40px 0;
+}
+.elementimg{
+    margin: 0 0 20px;
+}
+.tabContainer{
+
+    position: relative;
+    z-index: 1;
+    max-width: 1000px;
+    margin: 10px auto 100px 10px;
+    padding: 0 45px;
+    text-align: left;
+}
+.content{
+    border-style: solid;
+    border-color: #2f3640;
+    text-align: left;
+    padding: 0 900px 400px 0;
+    background: #d3e6f5;
+
+
+}
+
+#neuerContent{
+    display: initial;
+}
+#aktuellerContent{
+    display: none;
+}
+
+.contentButton{
+    font-family: "Roboto",sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #918db8;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    cursor: pointer;
+}

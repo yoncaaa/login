@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login and Registration</title>
+    <link rel="stylesheet" href="style.css">
+    <!--<link rel="stylesheet" href="loginheader.css">-->
+    <link rel="stylesheet" href="homestyle.css">
+    <?php include("regmail3.php");?>
+
+</head>
+<body>
+<header>
+    <a href="home.html"><img class="logo" src="logo.jpg" alt="logo"></a>
+    <nav>
+        <ul class="nav_links">
+            <li><a class="yes" href="#">Services</a> </li>
+            <li><a class="yes" href="#">Projects</a> </li>
+            <li><a class="yes" href="#">About</a> </li>
+        </ul>
+    </nav>
+    <a class="cta" class="yes" href="loginpage.html"><button class="header-button">Login</button></a>
+</header>
+    <div class="login-page">
+        <div class="form">
+            <form class="register-form" id="register-form" action="regmail3.php" method="POST">
+                <input type="text" placeholder="nachname" name="nachname"/>
+                <input type="text" placeholder="vorname" name="vorname"/>
+		<input type="text" placeholder="benutzername" name="benutzername"/>
+                <input type="password" placeholder="passwort" name="passwort"/>
+                <input type="password" placeholder="wiederhole passwort" name="passwort2"/>
+                <input type="email" placeholder="e-mail" name="email"/>
+                <input type="text" placeholder="beruf" name="beruf"/>
+		<input type="text" placeholder="strasse" name="strasse"/>
+		<input type="text" placeholder="hausnummer" name="hausnummer"/>
+		<input type="text" placeholder="postleitzahl" name="plz"/>
+		<input type="text" placeholder="ort" name="ort"/>
+                <button  >Create</button>
+                <!-- <input type="submit" value="submit">-->
+                <p class="message">Already registered? <a href="#" class="no" onclick="swfromreg()">Login</a></p>
+            </form>
+            <form class="login-form" id="login-form" >
+                <input type="text" placeholder="username"/>
+                <input type="password" placeholder="password"/>
+                <button class="form-button">login</button>
+                <p class="message" onclick="sw()">Not registered? <a href="#" class="no" onclick="swfromlog()" >Register</a></p>
+            </form>
+
+        </div>
+
+
+    </div>
+    <script src="login.js"></script>
+
+<!--
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+       <script>
+        $('.message a').click(function(){
+            $('form').animate({height:"toggle", opacity:"toggle"},"slow");
+        });
+       </script>
+-->
+
+
+</body>
+</html>
