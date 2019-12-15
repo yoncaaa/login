@@ -22,7 +22,7 @@
             </ul>
         </nav>
 
-        <div id="logregbuttons">
+        <div id="logregbuttons" class="headerButtonContainer">
             <a class="cta"  href="loginpage.html"><button class="header-button">Login</button></a>
             <a class="cta"  href="loginpage.html"><button class="header-button">Registrieren</button></a>
         </div>
@@ -30,8 +30,8 @@
 
    <div class="tabContainer">
        <div class="buttonContainer">
-           <button class="contentButton" onclick="selectedTab('neuerContent')" >Neue Kurse</button>
-           <button class="contentButton" onclick="selectedTab('aktuellerContent')">Aktuelle Kurse</button>
+           <button class="contentButton" id="ersterbutton" onclick="selectedTab('neuerContent', this.id)">Neue Kurse</button>
+           <button class="contentButton" id="zweiterbutton" onclick="selectedTab('aktuellerContent', this.id)">Aktuelle Kurse</button>
        </div>
 
        <div class="content" id="neuerContent">neue</div>

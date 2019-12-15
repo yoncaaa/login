@@ -22,23 +22,23 @@
         </ul>
     </nav>
 
-    <div id="logregbuttons">
+    <div id="logregbuttons" class="headerButtonContainer">
         <a class="cta"  href="loginpage.html"><button class="header-button">Login</button></a>
         <a class="cta"  href="loginpage.html"><button class="header-button">Registrieren</button></a>
     </div>
 </header>
 
-<h1 class="uberschrift">Kurs&uuml;bersicht</h1>
+<h1 class="uberschrift"  >Kurs&uuml;bersicht</h1>
 
 <div class="kursTabContainer">
     <div class="kursButtonContainer">
-        <button class="kursContentButton" onclick="selectedTabKursu(this.id)" >Alle Kurse</button>
-        <button class="kursContentButton" onclick="selectedTabKursu('freizeit')">Freizeit</button>
-        <button class="kursContentButton" onclick="selectedTabKursu('kultur')">Kultur</button>
-        <button class="kursContentButton" onclick="selectedTabKursu('beruf')">Beruf</button>
-        <button class="kursContentButton" onclick="selectedTabKursu('sprachen')">Sprachen</button>
-        <button class="kursContentButton" onclick="selectedTabKursu('sport')">Sport</button>
-        <button class="kursContentButton" onclick="selectedTabKursu('edv')">EDV</button>
+        <button class="kursContentButton" id="a" onclick="selectedTabKurs('allekurse',this.id)" >Alle Kurse</button>
+        <button class="kursContentButton" id="b" onclick="selectedTabKurs('freizeit',this.id)">Freizeit</button>
+        <button class="kursContentButton" id="c" onclick="selectedTabKurs('kultur',this.id)">Kultur</button>
+        <button class="kursContentButton" id="d" onclick="selectedTabKurs('beruf',this.id)">Beruf</button>
+        <button class="kursContentButton" id="e" onclick="selectedTabKurs('sprachen',this.id)">Sprachen</button>
+        <button class="kursContentButton" id="f" onclick="selectedTabKurs('sport',this.id)">Sport</button>
+        <button class="kursContentButton" id="g" onclick="selectedTabKurs('edv',this.id)">EDV</button>
 
     </div>
 
@@ -94,14 +94,34 @@
             <!--<p class="kursbeschreibung">
             </p>-->
         </div>
-
+        <div class="kurscontent">
+            <h3 class="kurstitle">
+                <a href="#" class="kurstitle" >Kurs 6</a>
+            </h3>
+            <!--<p class="kursbeschreibung">
+            </p>-->
+        </div>
+        <div class="kurscontent">
+            <h3 class="kurstitle">
+                <a href="#" class="kurstitle" >Kurs 7</a>
+            </h3>
+            <!--<p class="kursbeschreibung">
+            </p>-->
+        </div>
 
 
 
 
 
     </div>
+
     <div class="content" id="freizeit">freizeit</div>
+    <div class="content" id="kultur">kultur</div>
+    <div class="content" id="beruf">beruf</div>
+    <div class="content" id="sprachen">sprachen</div>
+    <div class="content" id="sport">sport</div>
+    <div class="content" id="edv">edv</div>
+
 </div>
 
 </body>

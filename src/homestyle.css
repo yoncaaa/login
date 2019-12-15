@@ -72,7 +72,7 @@ button.header-button{
 }
 
 
-button:hover{
+.headerButtonContainer button:hover{
     background-color: rgba(0,136,169,0.8);
 }
 
@@ -124,6 +124,15 @@ button:hover{
 .kursButtonContainer{
     padding: 10px 0;
 }
+/*hover von normalen tab buttons oben*/
+.buttonContainer button:hover{
+    background-color: #787597 !important;
+}
+/*hover von kurs tab buttons also links*/
+.kursButtonContainer button:hover{
+    background-color: #787597 !important;
+}
+
 .content{
     border-style: solid;
     border-color: #2f3640;
@@ -131,20 +140,21 @@ button:hover{
 /*  padding: 0 900px 400px 0;*/
     background: white;
     min-width: 800px;
-
+    display:none;
 
 }
-#allekurse {
+/*STANDARD EINSTELLUNGEN FÜR IDS*/
+#allekurse{
     display: block;
-}
-#freizeit {
-    display: none;
 }
 #neuerContent{
     display: block;
 }
-#aktuellerContent{
-    display: none;
+#ersterbutton{
+    background-color: #656280;
+}
+#a{
+    background-color: #656280;
 }
 .contentButton{
     font-family: "Roboto",sans-serif;
