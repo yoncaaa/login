@@ -9,6 +9,7 @@
 body{
     background-color: #d3e6f585;
 }
+
 li, a.yes, button.header-button {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
@@ -156,7 +157,9 @@ button.header-button{
 #a{
     background-color: #656280;
 }
-.contentButton{
+
+/*tab buttons die oben sind wie home2*/
+.buttonContainer .contentButton{
     font-family: "Roboto",sans-serif;
     text-transform: uppercase;
     outline: 0;
@@ -167,7 +170,9 @@ button.header-button{
     font-size: 14px;
     cursor: pointer;
 }
-.kursContentButton{
+
+/*alle tab buttons die links sind also vertikal übereinander wie in kursubersicht*/
+.kursButtonContainer .contentButton{
     font-family: "Roboto",sans-serif;
     text-transform: uppercase;
     outline: 0;
